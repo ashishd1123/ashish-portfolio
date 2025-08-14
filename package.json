@@ -1,5 +1,6 @@
 {
   "name": "ashish-portfolio",
+  "version": "0.1.0",
   "homepage": "https://ashishd1123.github.io/ashish-portfolio",
   "private": true,
   "type": "module",
@@ -8,7 +9,7 @@
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
-     "predeploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
