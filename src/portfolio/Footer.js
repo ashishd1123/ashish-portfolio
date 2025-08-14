@@ -1,10 +1,8 @@
-// Footer component
-const Footer = () => {
-  return (
-    <footer className="bg-gray-100 dark:bg-gray-800 text-center py-4 mt-8 transition-colors duration-500">
-      <p className="text-gray-700 dark:text-gray-300 text-sm">&copy; {new Date().getFullYear()} Ashish Dubey. All rights reserved.</p>
+const Footer = () => (
+    <footer className="py-8 text-center text-gray-500">
+        <p>Designed & Built by Your Name</p>
+        <p>Inspired by Lan Anh's Portfolio</p>
     </footer>
-  );
-};
+);
 
 export default Footer;

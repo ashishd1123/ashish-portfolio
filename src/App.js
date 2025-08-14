@@ -1,44 +1,77 @@
-import React, { useState, useEffect } from 'react';
-import Header from './portfolio/Header';
-import Hero from './portfolio/Hero';
-import About from './portfolio/About';
-import Skills from './portfolio/Skills';
-import Projects from './portfolio/Projects';
-import Contact from './portfolio/Contact';
-import Footer from './portfolio/Footer';
+import React, { useEffect, useState } from "react";
+import Footer from "./portfolio/Footer";
+import CustomCursor from "./portfolio/CustomCursor";
+import Header from "./portfolio/Header";
+import Home from "./portfolio/Home";
+import About from "./portfolio/About";
+import Goals from "./portfolio/Goals/Goals";
+import Experiences from "./portfolio/Experiences/Experiences";
+import Projects from "./portfolio/Projects/Projects";
+import Skills from "./portfolio/Skill/Skills";
+import Testimonials from "./portfolio/Testimonials";
+import { Contact } from "lucide-react";
+import SocialLinks from "./portfolio/SocialLinks";
 
-// Main App component that renders all other components
-const App = () => {
-  // State for dark mode toggle
-  const [isDarkMode, setIsDarkMode] = useState(true);
+export default function App() {
+    const [activeSection, setActiveSection] = useState('home');
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  // Toggle function for dark mode
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+    const handleMouseMove = (e) => {
+        setMousePosition({ x: e.clientX, y: e.clientY });
+    };
 
-  // Effect to apply dark mode class to the body
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [isDarkMode]);
+    const handleLinkClick = (e, id) => {
+        e.preventDefault();
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
-  return (
-    <div className="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen font-sans transition-colors duration-500">
-      <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-      <main className="container mx-auto px-4 py-8">
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
-  );
-};
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            { rootMargin: '-40% 0px -60% 0px' }
+        );
 
-export default App;
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            if (section) observer.observe(section);
+        });
+
+        return () => sections.forEach(section => {
+            if (section) observer.unobserve(section);
+        });
+    }, []);
+
+    return (
+        <div 
+            className="bg-slate-800" 
+            onMouseMove={handleMouseMove} 
+            style={{
+                background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+            }}
+        >
+            <CustomCursor />
+            <Header activeSection={activeSection} onLinkClick={handleLinkClick} />
+            <main>
+                <Home />
+                <About />
+                <Goals />
+                <Experiences />
+                <Projects />
+                <Skills />
+                <Testimonials />
+                <Contact />
+            </main>
+            <SocialLinks />
+            <Footer />
+        </div>
+    );
+}
