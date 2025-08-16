@@ -296,7 +296,7 @@ const Skills = () => {
     Frameworks & Libraries
   </span> */}
    <h3 className="text-2xl font-bold text-center mb-6">
-            Languages & CSS Techniques
+            Frameworks & Libraries
           </h3>
           <div className="grid grid-cols-3 sm:grid-cols-4 gap-6">
             {skills.frontend.frameworks.map((s) => (
