@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 const ExperienceItem = ({ title, company, duration, description, points, index }) => {
   const isEven = index % 2 === 0;
   return (
-    <div className="mb-6">
+    <div className="mb-4">
         <div className="bg-zinc-800/50 p-6 rounded-lg border border-slate-700 relative hover:border-teal-400 hover:-translate-y-2 transition-all duration-300">
           <span className="bg-teal-400 text-slate-900 text-xs font-bold px-2 py-1 rounded-full absolute -top-3">
             {duration}

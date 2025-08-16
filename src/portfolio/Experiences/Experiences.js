@@ -3,10 +3,23 @@ import ExperienceItem from "./ExperienceItem";
 
 const Experiences = () => {
 const experienceData = [
+      {
+      title: "Senior Frontend Developer",
+      company: "Backbase",
+      duration: "Feb 2025 – Present",
+      description: "Leading the development of enterprise-grade digital banking solutions at Backbase, with a strong focus on building scalable UI components and robust frontend architecture. Driving innovation across customer-facing journeys like Notifications, KYC, and Account Alerts, while ensuring security, performance, and seamless integration with the Backbase Engagement Banking Platform. Actively mentor peers and contribute to best practices that accelerate delivery and elevate overall product quality.",
+      points: [
+        "Developing responsive, scalable, and accessible front-end applications using Angular, TypeScript, and Backbase Design System.",
+        "Building and refactoring key modules such as Notification Preferences, Account Alerts, and KYC Journeys.",
+        "Integrated with Backbase SDKs and services, including Flow, Digital Onboarding, and Digital Assist, driving faster feature delivery.",
+        "Contributed to the ModelBank reference implementation, accelerating customer go-lives through reusable journeys and flows.",
+        "Automated tests using Selenium, Karma, and Cucumber, reducing manual QA efforts by 30%.",
+      ],
+    },
     {
       title: "Senior Software Engineer",
       company: "Thales DIS Technology India Pvt. Ltd",
-      duration: "Apr 2021 – Present",
+      duration: "Apr 2021 – Feb 2025",
       description: "Spearheading feature development for the flagship SafeNet Trusted Access (STA) platform, focusing on robust architecture and scalable UI components. I play a vital role in enhancing application security and performance, while mentoring team members to elevate our collective technical capabilities and drive product innovation.",
       points: [
         "Led the design and development of SafeNet Trusted Access (STA), a cloud-based access management service integrating SSO and enhanced security measures.",
@@ -73,7 +86,7 @@ const experienceData = [
           {experienceData.map((exp, index) => (
             <div
               key={index}
-              className={`mb-8 flex md:justify-between w-full ${
+              className={`mb-4 flex md:justify-between w-full ${
                 index % 2 === 0 ? 'md:flex-row-reverse' : ''
               }`}
             >
@@ -83,7 +96,7 @@ const experienceData = [
                 <Briefcase className="h-5 w-5 text-white" />
               </div>
 
-              <div className="order-1 w-full md:w-5/12 px-2 md:px-6 py-4">
+              <div className="order-1 w-full md:w-5/12 pl-10 md:px-4 py-4">
                 <ExperienceItem
                   title={exp.title}
                   company={exp.company}
