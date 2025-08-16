@@ -292,9 +292,12 @@ const Skills = () => {
       </div>
       <div className="container mx-auto grid lg:grid-cols-3 gap-10 px-4">
         <div className="bg-zinc-800/50 p-6 pt-14 rounded-lg border border-slate-700 relative hover:border-teal-400 hover:-translate-y-2 transition-all duration-300">
-          <span className="bg-teal-400 text-slate-900 text-xl font-bold px-8 py-1 text-center rounded-full absolute -top-4 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+          {/* <span className="bg-teal-400 text-slate-900 text-xl font-bold px-8 py-1 text-center rounded-full absolute -top-4 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
     Frameworks & Libraries
-  </span>
+  </span> */}
+   <h3 className="text-2xl font-bold text-center mb-6">
+            Languages & CSS Techniques
+          </h3>
           <div className="grid grid-cols-3 sm:grid-cols-4 gap-6">
             {skills.frontend.frameworks.map((s) => (
               <SkillIcon key={s.name} {...s} />
