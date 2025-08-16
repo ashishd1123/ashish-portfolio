@@ -1,16 +1,32 @@
 {
   "files": {
-    "main.css": "/ashish-portfolio/static/css/main.74b3b26f.css",
-    "main.js": "/ashish-portfolio/static/js/main.e649e9c4.js",
+    "main.css": "/ashish-portfolio/static/css/main.034788cb.css",
+    "main.js": "/ashish-portfolio/static/js/main.7a298211.js",
     "static/js/453.e52e8d23.chunk.js": "/ashish-portfolio/static/js/453.e52e8d23.chunk.js",
-    "static/media/background.png": "/ashish-portfolio/static/media/background.5f065a5fab66040ea67e.png",
+    "static/media/wynk_music.png": "/ashish-portfolio/static/media/wynk_music.3b68b35345c908f985af.png",
+    "static/media/luminous.png": "/ashish-portfolio/static/media/luminous.d2ab96de76b1f26ce7a0.png",
+    "static/media/background.png": "/ashish-portfolio/static/media/background.e90e24fea18e214e9e4c.png",
+    "static/media/aboutme.png": "/ashish-portfolio/static/media/aboutme.95affe01fc800eca37d3.png",
+    "static/media/ashish_resume.pdf": "/ashish-portfolio/static/media/ashish_resume.5aa2f1a3f3bfa5a91df2.pdf",
+    "static/media/sas_agent.avif": "/ashish-portfolio/static/media/sas_agent.8d74b652e9a5c8484e49.avif",
+    "static/media/nec_energy_solutions.jpeg": "/ashish-portfolio/static/media/nec_energy_solutions.41d5ce067b52cd464a35.jpeg",
+    "static/media/prakher_profile.jpeg": "/ashish-portfolio/static/media/prakher_profile.9e7f0cc0d3ffe5b88f9c.jpeg",
+    "static/media/michal_dillon.jpeg": "/ashish-portfolio/static/media/michal_dillon.08147236b9533c58c407.jpeg",
+    "static/media/shubham_dave_profile.jpeg": "/ashish-portfolio/static/media/shubham_dave_profile.f27c0b949a1819542bcc.jpeg",
+    "static/media/kartheek_profile.jpeg": "/ashish-portfolio/static/media/kartheek_profile.820e0221e5f42b9581b8.jpeg",
+    "static/media/samiksha_profile.jpeg": "/ashish-portfolio/static/media/samiksha_profile.93347a8a4867374f6612.jpeg",
+    "static/media/khushbo_profile.jpeg": "/ashish-portfolio/static/media/khushbo_profile.d6dcadbe8c2735bc3a06.jpeg",
+    "static/media/anamika_profile.jpeg": "/ashish-portfolio/static/media/anamika_profile.c62c3aa3195ea843d387.jpeg",
+    "static/media/kyc.jpg": "/ashish-portfolio/static/media/kyc.19d736fc421c7cab0bf2.jpg",
+    "static/media/reverse_proxy.png": "/ashish-portfolio/static/media/reverse_proxy.3dfccd5d8768f9907689.png",
+    "static/media/STA.png": "/ashish-portfolio/static/media/STA.206b75342e9a0f768b9f.png",
     "index.html": "/ashish-portfolio/index.html",
-    "main.74b3b26f.css.map": "/ashish-portfolio/static/css/main.74b3b26f.css.map",
-    "main.e649e9c4.js.map": "/ashish-portfolio/static/js/main.e649e9c4.js.map",
+    "main.034788cb.css.map": "/ashish-portfolio/static/css/main.034788cb.css.map",
+    "main.7a298211.js.map": "/ashish-portfolio/static/js/main.7a298211.js.map",
     "453.e52e8d23.chunk.js.map": "/ashish-portfolio/static/js/453.e52e8d23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74b3b26f.css",
-    "static/js/main.e649e9c4.js"
+    "static/css/main.034788cb.css",
+    "static/js/main.7a298211.js"
   ]
 }
