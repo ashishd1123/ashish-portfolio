@@ -1,51 +1,170 @@
 import ProjectCard from "./ProjectCard";
+import sta from "./../../Assets/Images/STA.png";
+import sas from "./../../Assets/Images/sas_agent.avif";
+import ReverseProxy from "./../../Assets/Images/reverse_proxy.png";
+import Luminous from "./../../Assets/Images/luminous.png";
+import WynkMusic from "./../../Assets/Images/wynk_music.png";
+import KYC from "./../../Assets/Images/kyc.jpg";
+import NECEnergySolution from "./../../Assets/Images/nec_energy_solutions.jpeg";
+
 
 const Projects = () => {
   const projectsData = [
     {
-      title: "Online Bookstore Frontend",
+      title: "SafeNet Trusted Access",
       description:
-        "The client-side application for a collaborative online bookstore project.",
-      tags: ["Next.js", "TailwindCSS", "TypeScript"],
-      imgSrc:
-        "https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=2070&auto=format&fit=crop",
-      liveLink: "#",
-      codeLink: "#",
+        "SafeNet Trusted Access is an access management and authentication service that enables quick deployment of MFA, enforcing the right authentication for the right user. It simplifies access to cloud and enterprise apps, streamlines identity management, and reduces password-related issues. It also provides a unified view of access events to ensure secure, trusted access across all applications.",
+      tags: ["Angular 18",
+            "React.js",
+            "Redux",
+            "Node.js",
+            "HTML5",
+            "CSS3",
+            "RxJS",
+            "NgRx",
+            "TypeScript",
+            "JavaScript",
+            "Selenium",
+            "SOLID Principles",
+            "GitHub",
+            "GitLab",
+            "CI/CD",],
+      imgSrc: sta,
+      company: "Thales",
     },
     {
-      title: "Online Bookstore Backend",
+      title: "SAS Agent Admin",
       description:
-        "The server-side API for the collaborative online bookstore project.",
-      tags: ["Node.js", "Express.js", "MongoDB"],
-      imgSrc:
-        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1934&auto=format&fit=crop",
-      liveLink: "#",
-      codeLink: "#",
+        "SAS Agent Admin may refer to either an administrator of the SAS analytics platform responsible for installation and maintenance, or a Standardised Agency System admin who manages agents selling government savings schemes in India. The meaning depends on the context",
+       tags: ["Angular 17",
+            "Node.js",
+            "HTML5",
+            "CSS3",
+            "RxJS",
+            "NgRx",
+            "TypeScript",
+            "JavaScript",
+            "Selenium",
+            "CSS Preprocessors",
+            "SOLID Principles",
+            "CI/CD",
+            "Cucumber",
+            "BEM Methodology",
+            "Flexbox",
+            "CSS Grid"],
+      imgSrc: sas,
+      company: "Thales",
     },
     {
-      title: "Bookstore ChatBot",
-      description: "A Python-based chatbot to assist users with book searches.",
-      tags: ["Python", "Flask", "NLP", "JavaScript"],
-      imgSrc:
-        "https://images.unsplash.com/photo-1589254065909-b7086229d092?q=80&w=1974&auto=format&fit=crop",
-      liveLink: "#",
-      codeLink: "#",
+      title: "Reverse Proxy",
+      description: "A reverse proxy is a server that sits in front of one or more web servers, receiving incoming client requests and forwarding them to the appropriate backend server. It acts as an intermediary, masking the true origin servers and providing benefits like enhanced security, performance, and reliability.",
+      tags: ["Angular 16",
+            "Electron.js",
+            "Node.js",
+            "HTML5",
+            "CSS3",
+            "RxJS",
+            "NgRx",
+            "TypeScript",
+            "CSS Preprocessors",
+            "JavaScript",
+            "Selenium",
+            "SOLID Principles",
+            "CI/CD",],
+      imgSrc: ReverseProxy,
+      company: "Thales",
+    },
+    {
+      title: "Luminous System Management",
+      description:
+        "Luminous System Management may refer to solar energy monitoring via the Luminous ConnectX app, inventory management for e-commerce brands through joinluminous.com, or support services for Luminous power backup products like inverters and batteries.",
+      tags: ["Angular 15, 16",
+            "HTML5",
+            "CSS3",
+            "RxJS",
+            "NgRx",
+            "TypeScript",
+            "JavaScript",
+            "Selenium",
+            "Material Design",
+            "SOLID Principles",],
+      imgSrc: Luminous,
+      company: "NEC",
+    },
+    {
+      title: "Wynk Music",
+      description:
+        "Wynk Music, launched on 1 September 2014 by Airtel Digital Limited, was an Indian music streaming service available in India, Sri Lanka, and 15 African countries. It supported 14 languages and offered programs to help independent artists with mentorship, distribution, and monetization.",
+      tags: ["Angular 14",
+            "Node.js",
+            "HTML5",
+            "CSS3",
+            "RxJS",
+            "NgRx",
+            "TypeScript",
+            "JavaScript",
+            "Material Design",
+            "SOLID Principles",
+            "CSS Preprocessors",
+            "BEM Methodology",
+            "Flexbox",
+            "CSS Grid"],
+      imgSrc: WynkMusic,
+      company: "Craterzone",
+    },
+    {
+      title: "KYC Banking (Smart & Manual Verification)",
+      description: "KYC (Know Your Customer) is a mandatory process for verifying a client’s identity when opening an account and periodically thereafter. It ensures customers are who they claim to be, and banks may refuse services if KYC requirements are not met.",
+      tags: ["React.js",
+            "Redux",
+            "Node.js",
+            "HTML5",
+            "CSS3",
+            "RxJS",
+            "TypeScript",
+            "JavaScript",
+            "Selenium",
+            "Material UI",
+            "SOLID Principles",
+            "CSS Preprocessors",
+            "Flexbox",
+            "CSS Grid"],
+      imgSrc: KYC,
+      company: "Thales",
+    },
+    {
+      title: "NEC Energy Solutions",
+      description: "NEC Energy Solutions develops advanced energy storage systems for applications such as renewable energy integration, grid stabilization, and backup power. Their projects focus on enhancing energy efficiency, reliability, and sustainability for utilities, businesses, and large-scale infrastructure",
+      tags: ["Angular",
+            "Node.js",
+            "HTML5",
+            "CSS3",
+            "RxJS",
+            "NgRx",
+            "TypeScript",
+            "JavaScript",
+            "Material Design",
+            "Karma",
+            "Flexbox",
+            "CSS Grid"],
+      imgSrc: NECEnergySolution,
+      company: "NEC",
     },
   ];
 
   return (
     <section
       id="projects"
-      className="py-24 sm:py-32 relative bg-slate-800 text-white overflow-hidden"
+      className="py-24 sm:py-32 relative bg-gray-800 text-white overflow-hidden"
     >
       <div className="container mx-auto text-center mb-12 px-4">
         <div style={{ opacity: 1, transform: "none" }}>
-          <div class="inline-block">
-            <div class="relative px-3 py-1 text-sm font-medium rounded-full bg-gradient-to-r from-teal-200/65 via-cyan-300/65 to-blue-400/65 backdrop-blur-sm border border-border mb-2">
-              <span class="relative z-10 text-foreground/80 text-gray-100">
+          <div className="inline-block">
+            <div className="relative px-3 py-1 text-sm font-medium rounded-full bg-gradient-to-r from-teal-200/65 via-cyan-300/65 to-blue-400/65 backdrop-blur-sm border border-border mb-2">
+              <span className="relative z-10 text-foreground/80 text-gray-100">
                 My recent projects
               </span>
-              <span class="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400/20 via-cyan-500/20 to-blue-600/20 animate-pulse"></span>
+              <span className="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400/20 via-cyan-500/20 to-blue-600/20 animate-pulse"></span>
             </div>
           </div>
         </div>
@@ -60,7 +179,7 @@ const Projects = () => {
           style={{ opacity: 1, transform: "none" }}
         ></div>
       </div>
-      <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+      <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-10 px-4">
         {projectsData.map((p) => (
           <ProjectCard key={p.title} {...p} />
         ))}

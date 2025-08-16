@@ -4,16 +4,16 @@ import GoalCard from "./GoalCard";
 const Goals = () => (
   <section
     id="goals"
-    className="py-24 sm:py-32 relative bg-slate-800 text-white overflow-hidden"
+    className="py-24 sm:py-32 relative bg-gray-800 text-white overflow-hidden"
   >
     <div className="container mx-auto text-center mb-12 px-4">
       <div style={{ opacity: 1, transform: "none" }}>
-        <div class="inline-block">
-          <div class="relative px-3 py-1 text-sm font-medium rounded-full bg-gradient-to-r from-teal-200/65 via-cyan-300/65 to-blue-400/65 backdrop-blur-sm border border-border mb-2">
-            <span class="relative z-10 text-foreground/80 text-gray-100">
+        <div className="inline-block">
+          <div className="relative px-3 py-1 text-sm font-medium rounded-full bg-gradient-to-r from-teal-200/65 via-cyan-300/65 to-blue-400/65 backdrop-blur-sm border border-border mb-2">
+            <span className="relative z-10 text-foreground/80 text-gray-100">
               My Roadmap
             </span>
-            <span class="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400/20 via-cyan-500/20 to-blue-600/20 animate-pulse"></span>
+            <span className="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400/20 via-cyan-500/20 to-blue-600/20 animate-pulse"></span>
           </div>
         </div>
       </div>
@@ -33,22 +33,25 @@ const Goals = () => (
         icon={<ChevronsRight className="text-teal-400" size={30} />}
         title="Short-Term Goal"
       >
-        To secure a challenging Frontend Developer position where I can apply my
-        skills in React and Next.js, and learn from experienced mentors.
+        Secure a challenging Frontend Developer role where I can leverage my
+        expertise in <em className="text-teal-300">React</em> and <em className="text-teal-300">Next.js</em>, contribute to impactful projects, and
+        gain valuable insights from experienced mentors.
       </GoalCard>
       <GoalCard
         icon={<Server className="text-teal-400" size={30} />}
         title="Mid-Term Goal"
       >
-        To evolve into a Senior Frontend Developer, taking ownership of complex
-        features and mentoring junior developers.
+        Progress into a <em className="text-teal-300">Full-Stack Developer</em> position, taking ownership of
+        complex, high-impact features while actively mentoring and supporting
+        junior developers.
       </GoalCard>
       <GoalCard
         icon={<Palette className="text-teal-400" size={30} />}
         title="Long-Term Goal"
       >
-        To become a technical lead or solutions architect, guiding technical
-        strategy and driving innovation in user experience.
+        Advance to a Technical Lead or Solutions Architect role, shaping
+        technical strategy, fostering innovation, and delivering exceptional
+        user experiences.
       </GoalCard>
     </div>
   </section>

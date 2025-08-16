@@ -1,10 +1,10 @@
 const Header = ({ activeSection, onLinkClick }) => {
-  const navLinks = ['Home', 'About', 'Goals', 'Experiences', 'Projects', 'Skills', 'Testimonials', 'Contact'];
+  const navLinks = ['Home', 'About', 'Goals', 'Experiences', 'Projects', 'Skills', 'Testimonials', 'Resume', 'Contact'];
 
   return (
     <header className="fixed top-0 left-0 w-full bg-slate-800/80 backdrop-blur-sm z-40 shadow-lg shadow-slate-900/20">
       <div className="container mx-auto flex justify-between items-center p-4 text-white">
-        <h1 className="text-2xl font-bold text-teal-400">Ashish Dubey</h1>
+        <h1 className="text-2xl font-bold text-teal-400">ASHISH DUBEY</h1>
         <nav className="hidden md:flex items-center space-x-2">
           {navLinks.map(link => (
             <a

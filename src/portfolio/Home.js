@@ -6,7 +6,6 @@ const Home = () => {
         <section id="home" className="h-screen flex items-center justify-center text-white text-center relative overflow-hidden">
             <div 
                 className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-50"
-                // 2. Import kiye gaye variable ka istemal karein
                 style={{ backgroundImage: `url(${BackgroundImage})` }} 
             ></div>
             {/* Overlay */}

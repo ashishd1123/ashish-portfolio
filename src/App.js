@@ -9,8 +9,10 @@ import Experiences from "./portfolio/Experiences/Experiences";
 import Projects from "./portfolio/Projects/Projects";
 import Skills from "./portfolio/Skill/Skills";
 import Testimonials from "./portfolio/Testimonials";
-import { Contact } from "lucide-react";
+import Contact from "./portfolio/Contact";
 import SocialLinks from "./portfolio/SocialLinks";
+import Resume from "./portfolio/Resume/Resume";
+import ScrollProgressBar from "./portfolio/ScrollProgressBar/ScrollProgressBar";
 
 export default function App() {
     const [activeSection, setActiveSection] = useState('home');
@@ -52,12 +54,13 @@ export default function App() {
 
     return (
         <div 
-            className="bg-slate-800" 
+            className="bg-slate-900" 
             onMouseMove={handleMouseMove} 
             style={{
                 background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
             }}
         >
+            <ScrollProgressBar />
             <CustomCursor />
             <Header activeSection={activeSection} onLinkClick={handleLinkClick} />
             <main>
@@ -67,6 +70,7 @@ export default function App() {
                 <Experiences />
                 <Projects />
                 <Skills />
+                <Resume />
                 <Testimonials />
                 <Contact />
             </main>

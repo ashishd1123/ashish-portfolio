@@ -1,103 +1,97 @@
+import { Briefcase } from "lucide-react";
 import ExperienceItem from "./ExperienceItem";
 
 const Experiences = () => {
-  const experienceData = [
+const experienceData = [
     {
-      title: "Web Developer",
-      company: "QuantumLeap Software",
-      duration: "Jan 2025 - Present",
+      title: "Senior Software Engineer",
+      company: "Thales DIS Technology India Pvt. Ltd",
+      duration: "Apr 2021 – Present",
+      description: "Spearheading feature development for the flagship SafeNet Trusted Access (STA) platform, focusing on robust architecture and scalable UI components. I play a vital role in enhancing application security and performance, while mentoring team members to elevate our collective technical capabilities and drive product innovation.",
       points: [
-        "As a key member of the product team, I contribute to the development of core features for our flagship SaaS platform, focusing on enhancing user experience and improving application performance.",
-        "✓ Led the development of a new real-time analytics dashboard using Next.js and WebSockets.",
-        "✓ Optimized application load times by 30% through code splitting, lazy loading, and image optimization.",
-        "✓ Collaborated with UI/UX designers to translate complex Figma mockups into pixel-perfect, responsive components.",
-        "✓ Mentored a junior developer, providing code reviews and guidance on best practices.",
+        "Led the design and development of SafeNet Trusted Access (STA), a cloud-based access management service integrating SSO and enhanced security measures.",
+        "Developed reusable UI components for data input and calculations, ensuring consistency across multiple applications.",
+        "Troubleshot and resolved critical development and testing issues, ensuring timely project delivery.",
+        "Mentored team members, enhancing overall productivity and technical capabilities.",
+        "Automated tests using Selenium, Karma, and Cucumber, reducing manual QA efforts by 30%.",
       ],
     },
     {
-      title: "Junior Frontend Developer",
-      company: "Digital Dreams Agency",
-      duration: "Jun 2024 - Dec 2024",
+      title: "Senior Software Engineer",
+      company: "Thales DIS Technology India Pvt. Ltd",
+      duration: "Apr 2020 – Apr 2021",
+      description: "Focused on the front-end development of secure, cloud-based access management solutions. My primary contributions involved building high-performance, cross-platform compatible UI components with React and Redux, ensuring seamless API integration and significantly improving code quality through rigorous code reviews.",
       points: [
-        "Developed and maintained responsive websites and web applications for a variety of clients, working within a fast-paced agency environment and collaborating closely with a team of developers and designers.",
-        "✓ Successfully delivered 5+ client websites using React and Tailwind CSS.",
-        "✓ Implemented complex UI animations and interactive features based on client specifications.",
-        "✓ Integrated third-party APIs for services such as payments and content management systems (CMS).",
-        "✓ Participated in agile ceremonies, including daily stand-ups, sprint planning, and retrospectives.",
+        "Designed and developed secure cloud-based access management solutions for Reverse Proxy and Agent Admin projects.",
+        "Built high-performance front-end components using React.js and Redux with cross-platform compatibility.",
+        "Collaborated with backend teams for seamless API integration and real-time data synchronization.",
+        "Enhanced code quality via code reviews and debugging, reducing production issues by 25%.",
       ],
     },
     {
-      title: "Frontend Developer Intern",
-      company: "InnovateTech Solutions",
-      duration: "Jan 2024 - May 2024",
+      title: "Software Engineer",
+      company: "ThinkSys Solution Pvt. Ltd",
+      duration: "Oct 2019 – Mar 2020",
+      description: "Specialized in front-end development, creating dynamic and responsive UI components using Angular and Bootstrap. I was instrumental in implementing interactive data visualizations with Highcharts.js and resolving key performance bottlenecks, directly contributing to a more stable and user-friendly application.",
       points: [
-        "Gained valuable hands-on experience by assisting the senior development team with bug fixes, UI enhancements, and feature development for their primary web application.",
+        "Developed and deployed Angular UI components, streamlining project workflows.",
+        "Built responsive Bootstrap-based UI with interactive data visualizations using Highcharts.js.",
+        "Debugged and resolved key functionality issues, improving overall application performance.",
+      ],
+    },
+    {
+      title: "Software Developer",
+      company: "Craterzone Pvt. Ltd. (BigOhTech Pvt. Ltd.)",
+      duration: "Jan 2017 – Oct 2019",
+      description: "As a versatile developer, I contributed to the end-to-end development of diverse applications for both government and commercial clients. I was deeply involved in the agile development lifecycle, from sprint planning to delivery, utilizing Angular and React.js to build robust and efficient solutions.",
+      points: [
+        "Played a pivotal role in application design and development for government and commercial projects.",
+        "Led sprint planning sessions and contributed to agile ceremonies to ensure timely delivery.",
+        "Built robust applications leveraging Angular and React.js, reducing overall development cycles.",
       ],
     },
   ];
 
+
   return (
-    <section
-      id="experiences"
-      className="py-24 sm:py-32 relative bg-slate-800 text-white overflow-hidden"
-    >
+    <section id="experiences" className="py-24 sm:py-32 bg-gray-800 text-white overflow-hidden">
       <div className="container mx-auto text-center mb-16 px-4">
-        <div style={{ opacity: 1, transform: "none" }}>
-          <div class="inline-block">
-            <div class="relative px-3 py-1 text-sm font-medium rounded-full bg-gradient-to-r from-teal-200/65 via-cyan-300/65 to-blue-400/65 backdrop-blur-sm border border-border mb-2">
-              <span class="relative z-10 text-foreground/80 text-gray-100">
-                My Professional Journey
-              </span>
-              <span class="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400/20 via-cyan-500/20 to-blue-600/20 animate-pulse"></span>
-            </div>
+        <div className="inline-block">
+          <div className="relative px-3 py-1 text-sm font-medium rounded-full bg-gradient-to-r from-teal-200/65 via-cyan-300/65 to-blue-400/65 backdrop-blur-sm border border-slate-700 mb-2">
+            <span className="relative z-10 text-gray-100">My Professional Journey</span>
+            <span className="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400/20 via-cyan-500/20 to-blue-600/20 animate-pulse"></span>
           </div>
         </div>
-
-        <h2
-          className="text-4xl md:text-5xl font-bold text-white"
-          style={{ opacity: 1, transform: "none" }}
-        >
-          Work Experience
-        </h2>
-        <div
-          className="w-24 h-1.5 bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-600 rounded-full mx-auto mt-2"
-          style={{ opacity: 1, transform: "none" }}
-        ></div>
+        <h2 className="text-4xl md:text-5xl font-bold text-white">Work Experience</h2>
+        <div className="w-24 h-1.5 bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-600 rounded-full mx-auto mt-4"></div>
       </div>
+
       <div className="container mx-auto px-4">
-        <div className="relative wrap overflow-hidden p-10 h-full">
-          <div
-            className="border-2-2 absolute border-opacity-20 border-slate-700 h-full border"
-            style={{ left: "50%" }}
-          ></div>
+        <div className="relative wrap overflow-hidden p-4 md:p-10 h-full">
+          <div className="absolute border-2-2 border-opacity-20 border-slate-700 h-full border left-5 md:left-1/2"></div>
+          
           {experienceData.map((exp, index) => (
             <div
               key={index}
-              className={`mb-8 flex justify-between items-center w-full ${
-                index % 2 === 0
-                  ? "flex-row-reverse left-timeline"
-                  : "right-timeline"
+              className={`mb-8 flex md:justify-between w-full ${
+                index % 2 === 0 ? 'md:flex-row-reverse' : ''
               }`}
             >
-              <div className="order-1 w-5/12"></div>
-              <div className="z-20 flex items-center order-1 bg-slate-800 shadow-xl w-8 h-8 rounded-full">
-                <h1 className="mx-auto font-semibold text-lg text-white"></h1>
+              <div className="hidden md:block w-5/12"></div>
+
+              <div className="z-20 flex items-center justify-center order-1 bg-teal-500 shadow-xl w-10 h-10 rounded-full absolute left-5 -translate-x-1/2 md:static md:translate-x-0">
+                <Briefcase className="h-5 w-5 text-white" />
               </div>
-              <div className="order-1 bg-slate-800/80 rounded-lg shadow-xl w-5/12 px-6 py-4 border border-slate-700">
-                <span className="bg-teal-400 text-slate-900 text-xs font-bold px-2 py-1 rounded-full absolute -top-3">
-                  {exp.duration}
-                </span>
-                <h3 className="mb-1 font-bold text-white text-2xl">
-                  {exp.title}
-                </h3>
-                <p className="text-sm font-medium leading-snug tracking-wide text-teal-400 text-opacity-100 mb-3">
-                  {exp.company}
-                </p>
-                <ul className="text-sm text-gray-400 list-none pl-0 space-y-2">
-                  {exp.points.map((point, i) => (
-                    <li key={i}>{point}</li>
-                  ))}
-                </ul>
+
+              <div className="order-1 w-full md:w-5/12 px-2 md:px-6 py-4">
+                <ExperienceItem
+                  title={exp.title}
+                  company={exp.company}
+                  duration={exp.duration}
+                  description={exp.description}
+                  points={exp.points}
+                  index={index}
+                />
               </div>
             </div>
           ))}
