@@ -1,5 +1,5 @@
 const Header = ({ activeSection, onLinkClick }) => {
-  const navLinks = ['Home', 'About', 'Goals', 'Experiences', 'Projects', 'Skills', 'Testimonials', 'Resume', 'Contact'];
+  const navLinks = ['Home', 'About', 'Goals', 'Experiences', 'Projects', 'Skills', 'Resume', 'Certifications', 'Testimonials', 'Contact'];
 
   return (
     <header className="fixed top-0 left-0 w-full bg-slate-800/80 backdrop-blur-sm z-40 shadow-lg shadow-slate-900/20">

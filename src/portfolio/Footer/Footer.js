@@ -64,8 +64,9 @@ const Footer = () => {
                 "Experiences",
                 "Projects",
                 "Skills",
-                "Testimonials",
                 "Resume",
+                "Certifications",
+                "Testimonials",
                 "Contact",
               ].map((item) => (
                 <li key={item}>
