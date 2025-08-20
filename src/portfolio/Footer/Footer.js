@@ -1,9 +1,4 @@
-import {
-  ChevronUpIcon,
-  Linkedin,
-  MailIcon,
-  PhoneCallIcon,
-} from "lucide-react";
+import { ChevronUpIcon, Linkedin, MailIcon, PhoneCallIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Footer = () => {
@@ -47,7 +42,9 @@ const Footer = () => {
               Ashish Dubey
             </a>
             <p className="mt-4 text-gray-400">
-              Passionate about crafting high-performance, user-centric web applications with cutting-edge frontend frameworks and design principles.
+              Passionate about crafting high-performance, user-centric web
+              applications with cutting-edge frontend frameworks and design
+              principles.
             </p>
           </div>
 
@@ -114,53 +111,56 @@ const Footer = () => {
             </ul>
           </div>
 
-<div>
-  <h3 className="text-sm font-semibold text-gray-100 uppercase tracking-wider mb-4">
-    Contact
-  </h3>
-  <ul className="space-y-3">
-    {/* Email */}
-    <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
-      <MailIcon className="text-teal-400 w-5 h-5 mt-1 flex-shrink-0 mr-3" /> {/* Added mr-3 */}
-      <div>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-zinc-200 hover:text-teal-300 transition-colors break-all"
-          href="mailto:ashishd25992@gmail.com"
-        >
-          ashishd25992@gmail.com
-        </a>
-      </div>
-    </li>
-    {/* LinkedIn */}
-    <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
-      <Linkedin className="text-teal-400 w-5 h-5 mt-1 flex-shrink-0 mr-3" /> {/* Added mr-3 */}
-      <div>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-zinc-200 hover:text-teal-300 transition-colors break-all"
-          href="https://linkedin.com/in/ashish-dubey-707767107"
-        >
-          linkedin.com/in/ashish-dubey-707767107
-        </a>
-      </div>
-    </li>
-    {/* Phone */}
-    <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
-      <PhoneCallIcon className="text-teal-400 w-5 h-5 mt-1 flex-shrink-0 mr-3" /> {/* Added mr-3 */}
-      <div>
-        <a
-          href="tel:+918737980888"
-          className="text-zinc-200 hover:text-teal-300 transition-colors"
-        >
-          +91 873-798-0888
-        </a>
-      </div>
-    </li>
-  </ul>
-</div>
+          <div>
+            <h3 className="text-sm font-semibold text-gray-100 uppercase tracking-wider mb-4">
+              Contact
+            </h3>
+            <ul className="space-y-3">
+              {/* Email */}
+              <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
+                <MailIcon className="text-teal-400 w-5 h-5 mt-1 flex-shrink-0 mr-3" />{" "}
+                {/* Added mr-3 */}
+                <div>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-zinc-200 hover:text-teal-300 transition-colors break-all"
+                    href="mailto:ashishd25992@gmail.com"
+                  >
+                    ashishd25992@gmail.com
+                  </a>
+                </div>
+              </li>
+              {/* LinkedIn */}
+              <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
+                <Linkedin className="text-teal-400 w-5 h-5 mt-1 flex-shrink-0 mr-3" />{" "}
+                {/* Added mr-3 */}
+                <div>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-zinc-200 hover:text-teal-300 transition-colors break-all"
+                    href="https://linkedin.com/in/ashish-dubey-707767107"
+                  >
+                    linkedin.com/in/ashish-dubey-707767107
+                  </a>
+                </div>
+              </li>
+              {/* Phone */}
+              <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
+                <PhoneCallIcon className="text-teal-400 w-5 h-5 mt-1 flex-shrink-0 mr-3" />{" "}
+                {/* Added mr-3 */}
+                <div>
+                  <a
+                    href="tel:+918737980888"
+                    className="text-zinc-200 hover:text-teal-300 transition-colors"
+                  >
+                    +91 873-798-0888
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Sub-Footer */}

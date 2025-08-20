@@ -48,7 +48,7 @@ const Certifications = () => {
 
   return (
     <section
-      id="testimonials"
+      id="certifications"
       className="py-24 sm:py-32 relative bg-gray-800 text-white overflow-hidden"
     >
       {/* Header */}
