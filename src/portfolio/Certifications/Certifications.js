@@ -4,24 +4,27 @@ import { useEffect, useState } from "react";
 import Coursera from "../../Assets/Certifications/Coursera.png";
 import ScrumMaster from "../../Assets/Certifications/Professional_Scrum_Master_I.png";
 import Backbase from "../../Assets/Certifications/Backbase_Certificate.png";
+import Coursera_JavaScript from "../../Assets/Certifications/JavaScript_Coursera2.png";
 
 const CertificationsList = [
   {
     name: "Meta Introduction to Front-End Development",
     vendor: "Coursera",
-    text: "Working with them was both professional and seamless. Their strong technical skills and ability to quickly adapt to evolving requirements were truly impressive.",
     cert: Coursera,
+  },
+  {
+    name: "JavaScript",
+    vendor: "Coursera",
+    cert: Coursera_JavaScript,
   },
   {
     name: "Professional Scrum Master I",
     vendor: "Scrum.org",
-    text: "Clear communication, attention to detail, and a commitment to delivering on time made them an invaluable part of the project team.",
     cert: ScrumMaster,
   },
   {
     name: "Backbase Certified Professional",
     vendor: "Backbase",
-    text: "Their ability to transform complex Figma designs into flawless, responsive interfaces was nothing short of outstanding.",
     cert: Backbase,
   },
 ];

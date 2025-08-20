@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ashish-portfolio/static/css/main.b798024b.css",
-    "main.js": "/ashish-portfolio/static/js/main.d2b79105.js",
+    "main.js": "/ashish-portfolio/static/js/main.09c02338.js",
     "static/js/453.e52e8d23.chunk.js": "/ashish-portfolio/static/js/453.e52e8d23.chunk.js",
     "static/media/wynk_music.png": "/ashish-portfolio/static/media/wynk_music.3b68b35345c908f985af.png",
     "static/media/luminous.png": "/ashish-portfolio/static/media/luminous.d2ab96de76b1f26ce7a0.png",
@@ -10,6 +10,7 @@
     "static/media/ashish_resume.pdf": "/ashish-portfolio/static/media/ashish_resume.5aa2f1a3f3bfa5a91df2.pdf",
     "static/media/Backbase_Certificate.png": "/ashish-portfolio/static/media/Backbase_Certificate.69c690a3654e8e9d3edc.png",
     "static/media/Coursera.png": "/ashish-portfolio/static/media/Coursera.ca4137e1f3ab722819ef.png",
+    "static/media/JavaScript_Coursera2.png": "/ashish-portfolio/static/media/JavaScript_Coursera2.1327465df2161d07c16d.png",
     "static/media/Professional_Scrum_Master_I.png": "/ashish-portfolio/static/media/Professional_Scrum_Master_I.b21e561a7416da3c7093.png",
     "static/media/sas_agent.avif": "/ashish-portfolio/static/media/sas_agent.8d74b652e9a5c8484e49.avif",
     "static/media/nec_energy_solutions.jpeg": "/ashish-portfolio/static/media/nec_energy_solutions.41d5ce067b52cd464a35.jpeg",
@@ -25,11 +26,11 @@
     "static/media/STA.png": "/ashish-portfolio/static/media/STA.206b75342e9a0f768b9f.png",
     "index.html": "/ashish-portfolio/index.html",
     "main.b798024b.css.map": "/ashish-portfolio/static/css/main.b798024b.css.map",
-    "main.d2b79105.js.map": "/ashish-portfolio/static/js/main.d2b79105.js.map",
+    "main.09c02338.js.map": "/ashish-portfolio/static/js/main.09c02338.js.map",
     "453.e52e8d23.chunk.js.map": "/ashish-portfolio/static/js/453.e52e8d23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b798024b.css",
-    "static/js/main.d2b79105.js"
+    "static/js/main.09c02338.js"
   ]
 }
