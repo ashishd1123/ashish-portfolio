@@ -1,13 +1,13 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
-import KhushbooProfile from "../Assets/profile/khushbo_profile.jpeg";
-import PrakherProfile from "../Assets/profile/prakher_profile.jpeg";
-import ShubhamDave from "../Assets/profile/shubham_dave_profile.jpeg";
-import KartheekProfile from "../Assets/profile/kartheek_profile.jpeg";
-import MichaelProfile from "../Assets/profile/michal_dillon.jpeg";
-import AnamikaProfile from "../Assets/profile/anamika_profile.jpeg";
-import SamikshaProfile from "../Assets/profile/samiksha_profile.jpeg";
+import KhushbooProfile from "../../Assets/profile/khushbo_profile.jpeg";
+import PrakherProfile from "../../Assets/profile/prakher_profile.jpeg";
+import ShubhamDave from "../../Assets/profile/shubham_dave_profile.jpeg";
+import KartheekProfile from "../../Assets/profile/kartheek_profile.jpeg";
+import MichaelProfile from "../../Assets/profile/michal_dillon.jpeg";
+import AnamikaProfile from "../../Assets/profile/anamika_profile.jpeg";
+import SamikshaProfile from "../../Assets/profile/samiksha_profile.jpeg";
 
 const testimonialsData = [
   {

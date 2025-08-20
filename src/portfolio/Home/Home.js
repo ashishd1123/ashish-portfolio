@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import BackgroundImage from '../Assets/Images/background.png';
+import BackgroundImage from '../../Assets/Images/background.png';
 
 const Home = () => {
     return (

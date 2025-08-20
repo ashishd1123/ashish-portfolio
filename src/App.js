@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
-import Footer from "./portfolio/Footer";
+import Footer from "./portfolio/Footer/Footer";
 import CustomCursor from "./portfolio/CustomCursor";
-import Header from "./portfolio/Header";
-import Home from "./portfolio/Home";
-import About from "./portfolio/About";
+import Header from "./portfolio/Header/Header";
+import Home from "./portfolio/Home/Home";
+import About from "./portfolio/About/About";
 import Goals from "./portfolio/Goals/Goals";
 import Experiences from "./portfolio/Experiences/Experiences";
 import Projects from "./portfolio/Projects/Projects";
 import Skills from "./portfolio/Skill/Skills";
-import Testimonials from "./portfolio/Testimonials";
-import Contact from "./portfolio/Contact";
-import SocialLinks from "./portfolio/SocialLinks";
+import Testimonials from "./portfolio/Testimonials/Testimonials";
+import Contact from "./portfolio/Contact/Contact";
+import SocialLinks from "./portfolio/SocialLinks/SocialLinks";
 import Resume from "./portfolio/Resume/Resume";
 import ScrollProgressBar from "./portfolio/ScrollProgressBar/ScrollProgressBar";
+import Certifications from "./portfolio/Certifications/Certifications";
 
 export default function App() {
     const [activeSection, setActiveSection] = useState('home');
@@ -71,6 +72,7 @@ export default function App() {
                 <Projects />
                 <Skills />
                 <Resume />
+                <Certifications />
                 <Testimonials />
                 <Contact />
             </main>

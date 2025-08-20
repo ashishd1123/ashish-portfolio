@@ -1,4 +1,4 @@
-import AboutMe from "../Assets/Images/aboutme.png";
+import AboutMe from "../../Assets/Images/aboutme.png";
 
 const About = () => (
   <section
