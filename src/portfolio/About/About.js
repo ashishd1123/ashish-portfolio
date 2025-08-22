@@ -1,10 +1,27 @@
 import AboutMe from "../../Assets/Images/aboutme.png";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import i18next from "i18next";
 
-const About = () => (
-  <section
-    id="about"
+const About = () => {
+    const { i18n, t } = useTranslation();
+
+    useEffect(() => {
+        if (localStorage.getItem("i18nextLng")?.length >= 2) {
+            i18next.changeLanguage("en");
+        }
+    }, []);
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
+  return (
+    <section
+      id="about"
     className="py-24 sm:py-32 relative bg-gray-800 text-white overflow-hidden"
   >
+                   
     <div className="container mx-auto text-center mb-12 px-4">
       <div style={{ opacity: 1, transform: "none" }}>
         <div className="inline-block">
@@ -21,7 +38,15 @@ const About = () => (
         style={{ opacity: 1, transform: "none" }}
       >
         About Me
+        {/* <h1>Hi Ashish {t('greeting')}</h1>
+               <p>{t('second')}</p> */}
       </h2>
+                  <button onClick={() => changeLanguage("en")}>English</button>
+            <button onClick={() => changeLanguage("es")}>Español</button>
+            <h1>{t("greeting")}</h1>
+      <p>{t("welcome")}</p>
+
+      
 
       <div
         className="w-24 h-1.5 bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-600 rounded-full mx-auto mt-2"
@@ -119,6 +144,6 @@ const About = () => (
       </div>
     </div>
   </section>
-);
+)};
 
 export default About;

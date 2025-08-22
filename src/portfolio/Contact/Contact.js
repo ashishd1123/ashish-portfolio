@@ -4,6 +4,7 @@ import {
   MapPin,
   PhoneCallIcon,
 } from "lucide-react";
+
 const Contact = () => (
   <section
     id="contact"

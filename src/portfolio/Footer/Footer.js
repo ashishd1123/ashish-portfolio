@@ -1,5 +1,6 @@
 import { ChevronUpIcon, Linkedin, MailIcon, PhoneCallIcon } from "lucide-react";
 import { useEffect, useState } from "react";
+import { navigationList } from "../../Data/navigation_list";
 
 const Footer = () => {
   // State to control the visibility of the scroll-to-top button
@@ -54,24 +55,13 @@ const Footer = () => {
               Navigation
             </h3>
             <ul className="space-y-2">
-              {[
-                "Home",
-                "About",
-                "Goals",
-                "Experiences",
-                "Projects",
-                "Skills",
-                "Resume",
-                "Certifications",
-                "Testimonials",
-                "Contact",
-              ].map((item) => (
-                <li key={item}>
+              {navigationList.map((item, index) => (
+                <li key={index}>
                   <a
                     className="text-gray-400 hover:text-blue-400 transition-colors"
-                    href={`#${item.toLowerCase()}`}
+                    href={item.href}
                   >
-                    {item}
+                    {item.name}
                   </a>
                 </li>
               ))}
