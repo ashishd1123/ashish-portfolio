@@ -1,10 +1,12 @@
 import { ChevronUpIcon, Linkedin, MailIcon, PhoneCallIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { navigationList } from "../../Data/navigation_list";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   // State to control the visibility of the scroll-to-top button
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useTranslation();
 
   // Show button when page is scrolled down
   const toggleVisibility = () => {
@@ -40,19 +42,17 @@ const Footer = () => {
               className="text-xl font-bold bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-600 bg-clip-text text-transparent"
               href="#home"
             >
-              Ashish Dubey
+              {t("ashish_portfolio_footer_name")}
             </a>
             <p className="mt-4 text-gray-400">
-              Passionate about crafting high-performance, user-centric web
-              applications with cutting-edge frontend frameworks and design
-              principles.
+              {t("ashish_portfolio_footer_tagline")}
             </p>
           </div>
 
           {/* Column 2: Navigation */}
           <div>
             <h3 className="text-sm font-semibold text-gray-100 uppercase tracking-wider mb-4">
-              Navigation
+              {t("ashish_portfolio_footer_navigation_title")}
             </h3>
             <ul className="space-y-2">
               {navigationList.map((item, index) => (
@@ -61,7 +61,7 @@ const Footer = () => {
                     className="text-gray-400 hover:text-blue-400 transition-colors"
                     href={item.href}
                   >
-                    {item.name}
+                    {t(item.name.toLowerCase())}
                   </a>
                 </li>
               ))}
@@ -71,39 +71,38 @@ const Footer = () => {
           {/* Column 3: My Roles */}
           <div>
             <h3 className="text-sm font-semibold text-gray-100 uppercase tracking-wider mb-4">
-              My Roles
+              {t("ashish_portfolio_footer_roles_title")}
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
+                <button
                   className="text-gray-400 hover:text-blue-400 transition-colors"
-                  href="#"
                 >
-                  Frontend Development
-                </a>
+                  {t("ashish_portfolio_footer_role_frontend")}
+                </button>
               </li>
               <li>
-                <a
+                <button
                   className="text-gray-400 hover:text-blue-400 transition-colors"
                   href="#"
                 >
-                  Full-Stack Solutions
-                </a>
+                  {t("ashish_portfolio_footer_role_fullstack")}
+                </button>
               </li>
               <li>
-                <a
+                <button
                   className="text-gray-400 hover:text-blue-400 transition-colors"
                   href="#"
                 >
-                  AI & Chatbot Integration
-                </a>
+                  {t("ashish_portfolio_footer_role_ai_chatbot")}
+                </button>
               </li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-sm font-semibold text-gray-100 uppercase tracking-wider mb-4">
-              Contact
+              {t("ashish_portfolio_footer_contact_title")}
             </h3>
             <ul className="space-y-3">
               {/* Email */}
@@ -157,18 +156,18 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-gray-500">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-md">
-              Designed & Built by Ashish Dubey. © 2025 All rights reserved.
+              {t("ashish_portfolio_footer_copyright")}
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a className="text-gray-500 hover:text-blue-500" href="#">
-                Privacy Policy
-              </a>
-              <a className="text-gray-500 hover:text-blue-500" href="#">
-                Terms of Service
-              </a>
-              <a className="text-gray-500 hover:text-blue-500" href="#">
-                Cookies
-              </a>
+              <button className="text-gray-500 hover:text-blue-500">
+                {t("ashish_portfolio_footer_privacy_policy")}
+              </button>
+              <button className="text-gray-500 hover:text-blue-500">
+                {t("ashish_portfolio_footer_terms_of_service")}
+              </button>
+              <button className="text-gray-500 hover:text-blue-500">
+                {t("ashish_portfolio_footer_cookies")}
+              </button>
             </div>
           </div>
         </div>

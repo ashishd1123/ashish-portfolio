@@ -1,5 +1,5 @@
 
-const ProjectCard = ({ title, description, tags, imgSrc }) => (
+const ProjectCard = ({ title, description, company, tags, imgSrc }) => (
     <div className="bg-zinc-800/50 rounded-lg overflow-hidden border border-slate-700 group transition-all duration-300 hover:border-teal-400 hover:shadow-2xl hover:shadow-teal-500/10">
         <div className="overflow-hidden h-56">
             <img src={imgSrc} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />

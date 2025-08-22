@@ -16,22 +16,17 @@ import ScrollProgressBar from "./Portfolio/ScrollProgressBar/ScrollProgressBar";
 import Certifications from "./Portfolio/Certifications/Certifications";
 import { useTranslation } from 'react-i18next';
 import i18next from "i18next";
-// import { changeLanguage } from "i18next";
 
 export default function App() {
     const [activeSection, setActiveSection] = useState('home');
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-   // `t` is the translation function, `i18n` is the i18next instance
-  const { i18n, t } = useTranslation(["About"]);
+  const { i18n } = useTranslation();
 
   useEffect(() => {
-            // console.log("Language set to:", localStorage.getItem("i18nextLng"));
-
-        if (localStorage.getItem("i18nextLng")?.length >= 2) {
-            console.log("Language set to:", localStorage.getItem("i18nextLng"));
-            i18next.changeLanguage("en");
-        }
-    }, []);
+    if (localStorage.getItem("i18nextLng")?.length >= 2) {
+      i18next.changeLanguage(localStorage.getItem("i18nextLng"));
+    }
+  }, []);
 
     const handleMouseMove = (e) => {
         setMousePosition({ x: e.clientX, y: e.clientY });
@@ -81,7 +76,7 @@ export default function App() {
             }}
         >
             <ScrollProgressBar />
-            {/* <CustomCursor /> */}
+            <CustomCursor />
             <Header activeSection={activeSection} onLinkClick={handleLinkClick} onLanguageSelect={(lang) => handleLanguageChange(lang)}/>
             <main>
                 <Home />

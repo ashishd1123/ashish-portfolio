@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { testimonialsData } from "../../Data/testimonials_list_data";
+import { useTranslation } from "react-i18next";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,12 +9,12 @@ const Testimonials = () => {
 
   const nextTestimonial = () =>
     setCurrentIndex((prev) => (prev + 1) % testimonialsData.length);
+  const { t } = useTranslation();
 
   const prevTestimonial = () =>
     setCurrentIndex((prev) => (prev - 1 + testimonialsData.length) % testimonialsData.length
     );
 
-  // Autoplay effect
   useEffect(() => {
     if (isHovered) return;
     const interval = setInterval(nextTestimonial, 5000);
@@ -25,19 +26,17 @@ const Testimonials = () => {
       id="testimonials"
       className="py-24 sm:py-32 relative bg-gray-800 text-white overflow-hidden"
     >
-      {/* Header */}
       <div className="container mx-auto text-center mb-12 px-4">
         <div className="inline-block relative px-3 py-1 text-sm font-medium rounded-full bg-gradient-to-r from-teal-200/65 via-cyan-300/65 to-blue-400/65 backdrop-blur-sm border border-border mb-2">
           <span className="relative z-10 text-gray-100">
-            What My Collaborators Say
+            {t("ashish_portfolio_testimonials_subtitle")}
           </span>
           <span className="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400/20 via-cyan-500/20 to-blue-600/20 animate-pulse"></span>
         </div>
-        <h2 className="text-4xl md:text-5xl font-bold">Testimonials</h2>
+        <h2 className="text-4xl md:text-5xl font-bold">{t("ashish_portfolio_testimonials_title")}</h2>
         <div className="w-24 h-1.5 bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-600 rounded-full mx-auto mt-2"></div>
       </div>
 
-      {/* Carousel */}
       <div
         className="container mx-auto relative max-w-4xl px-4"
         onMouseEnter={() => setIsHovered(true)}
@@ -54,17 +53,17 @@ const Testimonials = () => {
               <div key={index} className="w-full flex-shrink-0 px-4">
                 <div className="bg-zinc-800/50 p-8 rounded-lg border border-slate-700 text-center ">
                   <p className="text-lg text-gray-300 italic mb-6">
-                    "{testimonial.text}"
+                    "{t(`ashish_portfolio_testimonials_list.texts.${testimonial.text}`)}"
                   </p>
                   <div className="flex items-center justify-center">
                     <img
                       src={testimonial.avatar}
-                      alt={testimonial.name}
+                      alt={t(`ashish_portfolio_testimonials_list.names.${testimonial.name}`)}
                       className="w-12 h-12 rounded-full mr-4"
                     />
                     <div>
-                      <h4 className="font-bold">{testimonial.name}</h4>
-                      <p className="text-teal-400">{testimonial.role}</p>
+                      <h4 className="font-bold">{t(`ashish_portfolio_testimonials_list.names.${testimonial.name}`)}</h4>
+                      <p className="text-teal-400">{t(`ashish_portfolio_testimonials_list.roles.${testimonial.role}`)}</p>
                     </div>
                   </div>
                 </div>

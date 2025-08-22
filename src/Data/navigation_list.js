@@ -14,7 +14,11 @@ export const navigationList = [
     href: "#languages",
     children: [
       { name: "English", code: "en" },
-      { name: "Japanese", code: "jp" },
+      { name: "Japanese", code: "ja" },
+      { name: "Mandarin Chinese", code: "zh" },
+      { name: "Spanish", code: "es" },
+      { name: "Arabic", code: "ar" },
+       { name: "French", code: "fr" },
     ],
   },
 ];

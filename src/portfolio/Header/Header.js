@@ -4,21 +4,20 @@ import { useTranslation } from "react-i18next";
 
 const Header = ({ activeSection, onLinkClick }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   const handleLanguageSelect = (lng) => {
-    i18n.changeLanguage(lng); // 🔄 switch language
-    setOpenDropdown(null);    // close dropdown
+    i18n.changeLanguage(lng);
+    setOpenDropdown(null);
   };
 
   return (
     <header className="fixed top-0 left-0 w-full bg-slate-800/80 backdrop-blur-sm z-40 shadow-lg shadow-slate-900/20">
       <div className="container mx-auto flex justify-between items-center p-4 text-white">
-        <h1 className="text-2xl font-bold text-teal-400">ASHISH DUBEY</h1>
+        <h1 className="text-2xl font-bold text-teal-400">{t("ashish_portfolio_home_title")}</h1>
         <nav className="hidden md:flex items-center space-x-2 relative">
-          {navigationList.map(link =>
+          {navigationList.map((link) =>
             link.children ? (
-              // 🔽 Dropdown for Languages
               <div
                 key={link.name}
                 className="relative group"
@@ -27,17 +26,19 @@ const Header = ({ activeSection, onLinkClick }) => {
               >
                 <button
                   className={`text-md px-3 py-2 hover:text-white hover:bg-slate-700/50 rounded-md transition-colors font-medium duration-200 ${
-                    activeSection === link.href ? "bg-teal-500/10 text-teal-300" : ""
+                    activeSection === link.href
+                      ? "bg-teal-500/10 text-teal-300"
+                      : ""
                   }`}
                 >
-                  {link.name}
+                  {t(link.name.toLowerCase())}
                 </button>
                 {openDropdown === link.name && (
                   <div className="absolute left-0 w-40 bg-slate-800/95 shadow-lg rounded-lg overflow-hidden z-50">
-                    {link.children.map(child => (
+                    {link.children.map((child) => (
                       <button
                         key={child.name}
-                        onClick={() => handleLanguageSelect(child.code)} // ✅ use language code
+                        onClick={() => handleLanguageSelect(child.code)}
                         className="block w-full text-left px-4 py-2 text-sm text-white hover:bg-slate-700/70 transition-colors"
                       >
                         {child.name}
@@ -47,16 +48,17 @@ const Header = ({ activeSection, onLinkClick }) => {
                 )}
               </div>
             ) : (
-              // 🔗 Normal links
               <a
                 key={link.name}
                 href={link.href}
-                onClick={e => onLinkClick(e, link.href)}
+                onClick={(e) => onLinkClick(e, link.href)}
                 className={`relative text-md px-3 py-2 hover:text-white hover:bg-slate-700/50 rounded-md transition-colors font-medium duration-200 ${
-                  activeSection === link.href ? "bg-teal-500/10 text-teal-300" : ""
+                  activeSection === link.href
+                    ? "bg-teal-500/10 text-teal-300"
+                    : ""
                 }`}
               >
-                {link.name}
+                {t(link.name.toLowerCase())}
                 {activeSection === link.href && (
                   <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-teal-400"></span>
                 )}

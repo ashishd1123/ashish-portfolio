@@ -4,91 +4,91 @@ export const skills = {
     frontend: {
       frameworks: [
         {
-          name: "Angular",
+          name: "angular",
           icon: Ican.angular,
         },
         {
-          name: "AngularJS",
+          name: "angularjs",
           icon: Ican.angularjs,
         },
         {
-          name: "ReactJS",
+          name: "reactjs",
           icon: Ican.react,
         },
         {
-          name: "Next.js",
+          name: "nextjs",
           icon: Ican.nextjs,
         },
         {
-          name: "Redux",
+          name: "redux",
           icon: Ican.redux,
         },
         {
-          name: "NgRx",
+          name: "ngrx",
           icon: Ican.ngrx,
         },
         {
-          name: "RxJS",
+          name: "rxjs",
           icon: Ican.rxjs,
         },
         {
-          name: "jQuery",
+          name: "jquery",
           icon: Ican.jquery,
         },
         {
-          name: "Bootstrap",
+          name: "bootstrap",
           icon: Ican.bootstrap,
         },
         {
-          name: "Material UI",
+          name: "material_ui",
           icon: Ican.materialui,
         },
         {
-          name: "Tailwind CSS",
+          name: "tailwind_css",
           icon: Ican.tailwind,
         },
       ],
       languages: [
         {
-          name: "TypeScript",
+          name: "typescript",
           icon: Ican.typescript,
         },
         {
-          name: "JavaScript (ES6+)",
+          name: "javascript",
           icon: Ican.javascript,
         },
         {
-          name: "HTML5",
+          name: "html5",
           icon: Ican.html,
         },
         {
-          name: "CSS3",
+          name: "css3",
           icon: Ican.css,
         },
         {
-          name: "Node.js",
+          name: "nodejs",
           icon: Ican.nodejs,
         },
       ],
       cssTechniques: [
         {
-          name: "BEM Methodology",
+          name: "bem_methodology",
           icon: Ican.bem,
         },
         {
-          name: "CSS Flexbox",
+          name: "css_flexbox",
           icon: Ican.flexbox,
         },
         {
-          name: "CSS Grid",
+          name: "css_grid",
           icon: Ican.cssGrid,
         },
         {
-          name: "CSS Animations",
+          name: "css_animations",
           icon: Ican.cssAnimations,
         },
         {
-          name: "SASS/SCSS, Less",
+          name: "sass_scss_less",
           icon: Ican.sass,
         },
       ],
@@ -96,15 +96,15 @@ export const skills = {
     backendAndDatabase: {
       databases: [
         {
-          name: "MongoDB",
+          name: "mongodb",
           icon: Ican.mongodb,
         },
         {
-          name: "MySQL",
+          name: "mysql",
           icon: Ican.mysql,
         },
         {
-          name: "Firebase",
+          name: "firebase",
           icon: Ican.firebase,
         },
       ],
@@ -112,11 +112,11 @@ export const skills = {
     infrastructure: {
       cloudPlatforms: [
         {
-          name: "AWS",
+          name: "aws",
           icon: Ican.aws,
         },
         {
-          name: "Azure",
+          name: "azure",
           icon: Ican.azure,
         },
       ],
@@ -124,138 +124,138 @@ export const skills = {
     tools: {
       buildTools: [
         {
-          name: "Webpack",
+          name: "webpack",
           icon: Ican.webpack,
         },
         {
-          name: "Vite",
+          name: "vite",
           icon: Ican.vite,
         },
         {
-          name: "Gulp",
+          name: "gulp",
           icon: Ican.gulp,
         },
         {
-          name: "Grunt",
+          name: "grunt",
           icon: Ican.grunt,
         },
         {
-          name: "Rollup",
+          name: "rollup",
           icon: Ican.rollup,
         },
         {
-          name: "Babel",
+          name: "babel",
           icon: Ican.babel,
         },
         {
-          name: "ESLint",
+          name: "eslint",
           icon: Ican.eslint,
         },
       ],
       testing: [
         {
-          name: "Selenium",
+          name: "selenium",
           icon: Ican.selenium,
         },
         {
-          name: "Karma",
+          name: "karma",
           icon: Ican.karma,
         },
         {
-          name: "Cucumber",
+          name: "cucumber",
           icon: Ican.cucumber,
         },
         {
-          name: "Playwright",
+          name: "playwright",
           icon: Ican.playwright,
         },
         {
-          name: "Jest",
+          name: "jest",
           icon: Ican.jest,
         },
         {
-          name: "Cypress",
+          name: "cypress",
           icon: Ican.cypress,
         },
       ],
       ciCd: [
         {
-          name: "Jenkins",
+          name: "jenkins",
           icon: Ican.jenkins,
         },
         {
-          name: "GitHub Actions",
+          name: "github_actions",
           icon: Ican.githubActions,
         },
         {
-          name: "GitLab CI/CD",
+          name: "gitlab_ci_cd",
           icon: Ican.gitlab,
         },
         {
-          name: "CircleCI",
+          name: "circleci",
           icon: Ican.circleci,
         },
       ],
       versionControl: [
         {
-          name: "Git",
+          name: "git",
           icon: Ican.git,
         },
         {
-          name: "GitHub",
+          name: "github",
           icon: Ican.github,
         },
         {
-          name: "GitLab",
+          name: "gitlab",
           icon: Ican.gitlab,
         },
         {
-          name: "Bitbucket",
+          name: "bitbucket",
           icon: Ican.bitbucket,
         },
         {
-          name: "SVN",
+          name: "svn",
           icon: Ican.svn,
         },
       ],
       productivity: [
         {
-          name: "JIRA",
+          name: "jira",
           icon: Ican.jira,
         },
         {
-          name: "Confluence",
+          name: "confluence",
           icon: Ican.confluence,
         },
         {
-          name: "VS Code",
+          name: "vscode",
           icon: Ican.vscode,
         },
         {
-          name: "Postman",
+          name: "postman",
           icon: Ican.postman,
         },
         {
-          name: "Swagger",
+          name: "swagger",
           icon: Ican.swagger,
         },
       ],
     },
     methodologies: [
       {
-        name: "Agile",
+        name: "agile",
         icon: Ican.agile,
       },
       {
-        name: "Waterfall",
+        name: "waterfall",
         icon: Ican.waterfall,
       },
       {
-        name: "Scrum",
+        name: "scrum",
         icon: Ican.scrum,
       },
       {
-        name: "Kanban",
+        name: "kanban",
         icon: Ican.kanban,
       },
     ],

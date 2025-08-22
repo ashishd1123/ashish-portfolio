@@ -5,23 +5,23 @@ import Coursera_JavaScript from "../Assets/Certifications/JavaScript_Coursera2.p
 
 export const CertificationsList = [
   {
-    name: "Meta Introduction to Front-End Development",
-    vendor: "Coursera",
+    name: "certification_name_meta",
+    vendor: "certification_vendor_meta",
     cert: Coursera,
   },
   {
-    name: "JavaScript",
-    vendor: "Coursera",
+    name: "certification_name_javascript",
+    vendor: "certification_vendor_javascript",
     cert: Coursera_JavaScript,
   },
   {
-    name: "Professional Scrum Master I",
-    vendor: "Scrum.org",
+    name: "certification_name_scrum1",
+    vendor: "certification_vendor_scrum1",
     cert: ScrumMaster,
   },
   {
-    name: "Backbase Certified Professional",
-    vendor: "Backbase",
+    name: "certification_name_backbase",
+    vendor: "certification_vendor_backbase",
     cert: Backbase,
   },
 ];
