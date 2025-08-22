@@ -1,3 +1,4 @@
 {
-    "name": "Ashish Dubey"
+  "greeting": "Hello, World!",
+  "welcome": "Welcome to our application."
 }
