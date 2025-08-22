@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/ashish-portfolio/static/css/main.b798024b.css",
-    "main.js": "/ashish-portfolio/static/js/main.09c02338.js",
+    "main.css": "/ashish-portfolio/static/css/main.9e7755bf.css",
+    "main.js": "/ashish-portfolio/static/js/main.a2df84b1.js",
+    "static/js/38.4dad74b8.chunk.js": "/ashish-portfolio/static/js/38.4dad74b8.chunk.js",
     "static/js/453.e52e8d23.chunk.js": "/ashish-portfolio/static/js/453.e52e8d23.chunk.js",
     "static/media/wynk_music.png": "/ashish-portfolio/static/media/wynk_music.3b68b35345c908f985af.png",
     "static/media/luminous.png": "/ashish-portfolio/static/media/luminous.d2ab96de76b1f26ce7a0.png",
@@ -25,12 +26,13 @@
     "static/media/reverse_proxy.png": "/ashish-portfolio/static/media/reverse_proxy.3dfccd5d8768f9907689.png",
     "static/media/STA.png": "/ashish-portfolio/static/media/STA.206b75342e9a0f768b9f.png",
     "index.html": "/ashish-portfolio/index.html",
-    "main.b798024b.css.map": "/ashish-portfolio/static/css/main.b798024b.css.map",
-    "main.09c02338.js.map": "/ashish-portfolio/static/js/main.09c02338.js.map",
+    "main.9e7755bf.css.map": "/ashish-portfolio/static/css/main.9e7755bf.css.map",
+    "main.a2df84b1.js.map": "/ashish-portfolio/static/js/main.a2df84b1.js.map",
+    "38.4dad74b8.chunk.js.map": "/ashish-portfolio/static/js/38.4dad74b8.chunk.js.map",
     "453.e52e8d23.chunk.js.map": "/ashish-portfolio/static/js/453.e52e8d23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b798024b.css",
-    "static/js/main.09c02338.js"
+    "static/css/main.9e7755bf.css",
+    "static/js/main.a2df84b1.js"
   ]
 }
