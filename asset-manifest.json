@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ashish-portfolio/static/css/main.4fe319b8.css",
-    "main.js": "/ashish-portfolio/static/js/main.9bb7c70d.js",
+    "main.js": "/ashish-portfolio/static/js/main.7105da8c.js",
     "static/js/453.e52e8d23.chunk.js": "/ashish-portfolio/static/js/453.e52e8d23.chunk.js",
     "static/js/38.4dad74b8.chunk.js": "/ashish-portfolio/static/js/38.4dad74b8.chunk.js",
     "static/media/wynk_music.png": "/ashish-portfolio/static/media/wynk_music.3b68b35345c908f985af.png",
@@ -27,12 +27,12 @@
     "static/media/STA.png": "/ashish-portfolio/static/media/STA.206b75342e9a0f768b9f.png",
     "index.html": "/ashish-portfolio/index.html",
     "main.4fe319b8.css.map": "/ashish-portfolio/static/css/main.4fe319b8.css.map",
-    "main.9bb7c70d.js.map": "/ashish-portfolio/static/js/main.9bb7c70d.js.map",
+    "main.7105da8c.js.map": "/ashish-portfolio/static/js/main.7105da8c.js.map",
     "453.e52e8d23.chunk.js.map": "/ashish-portfolio/static/js/453.e52e8d23.chunk.js.map",
     "38.4dad74b8.chunk.js.map": "/ashish-portfolio/static/js/38.4dad74b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4fe319b8.css",
-    "static/js/main.9bb7c70d.js"
+    "static/js/main.7105da8c.js"
   ]
 }
