@@ -233,15 +233,17 @@
   "ashish_portfolio_certifications_list": {
     "names": {
       "certification_name_meta": "Meta前端开发入门",
-  "certification_name_javascript": "JavaScript编程",
-  "certification_name_scrum1": "专业Scrum Master I",
-  "certification_name_backbase": "Backbase认证专家"
+      "certification_name_javascript": "JavaScript编程",
+      "certification_name_scrum1": "专业Scrum Master I",
+      "certification_name_backbase": "Backbase认证专家",
+      "certification_name_pcep_entry": "PCEP – 认证入门级Python程序员"
     },
     "vendors": {
       "certification_vendor_meta": "Coursera",
       "certification_vendor_javascript": "Coursera",
       "certification_vendor_scrum1": "Scrum.org",
-      "certification_vendor_backbase": "Backbase"
+      "certification_vendor_backbase": "Backbase",
+      "certification_vendor_pcep_entry": "Python Institute"
     }
   },
   "ashish_portfolio_certifications_title": "证书",
