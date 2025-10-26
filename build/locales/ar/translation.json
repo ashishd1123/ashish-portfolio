@@ -233,15 +233,17 @@
   "ashish_portfolio_certifications_list": {
     "names": {
       "certification_name_meta": "مقدمة ميتا لتطوير الواجهة الأمامية",
-  "certification_name_javascript": "برمجة JavaScript",
-  "certification_name_scrum1": "خبير سكرم محترف I",
-  "certification_name_backbase": "محترف معتمد من Backbase"
+      "certification_name_javascript": "برمجة JavaScript",
+      "certification_name_scrum1": "خبير سكرم محترف I",
+      "certification_name_backbase": "محترف معتمد من Backbase",
+      "certification_name_pcep_entry": "مطور بايثون معتمد من PCEP - المستوى المبتدئ"
     },
     "vendors": {
       "certification_vendor_meta": "Coursera",
       "certification_vendor_javascript": "Coursera",
       "certification_vendor_scrum1": "Scrum.org",
-      "certification_vendor_backbase": "Backbase"
+      "certification_vendor_backbase": "Backbase",
+      "certification_vendor_pcep_entry": "معهد بايثون"
     }
   },
   "ashish_portfolio_certifications_title": "الشهادات",

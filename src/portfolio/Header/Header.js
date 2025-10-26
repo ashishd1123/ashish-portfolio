@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { navigationList } from "../../Data/navigation_list";
 import { useTranslation } from "react-i18next";
-import { Menu, X } from "lucide-react"; // lucide-react से Menu और X आइकन इम्पोर्ट करें
+import { Menu, X } from "lucide-react";
 
 const Header = ({ activeSection, onLinkClick }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // मोबाइल मेनू के लिए स्टेट
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { i18n, t } = useTranslation();
 
   const handleLanguageSelect = (lng) => {

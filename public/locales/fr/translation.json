@@ -233,15 +233,17 @@
   "ashish_portfolio_certifications_list": {
     "names": {
       "certification_name_meta": "Meta Introduction au Développement Front-End",
-"certification_name_javascript": "Programmation JavaScript",
-"certification_name_scrum1": "Scrum Master Professionnel I",
-"certification_name_backbase": "Professionnel Certifié Backbase"
+      "certification_name_javascript": "Programmation JavaScript",
+      "certification_name_scrum1": "Scrum Master Professionnel I",
+      "certification_name_backbase": "Professionnel Certifié Backbase",
+      "certification_name_pcep_entry": "PCEP - Programmeur Python Certifié de Niveau d'Entrée"
     },
     "vendors": {
       "certification_vendor_meta": "Coursera",
       "certification_vendor_javascript": "Coursera",
       "certification_vendor_scrum1": "Scrum.org",
-      "certification_vendor_backbase": "Backbase"
+      "certification_vendor_backbase": "Backbase",
+      "certification_vendor_pcep_entry": "Python Institute"
     }
   },
   "ashish_portfolio_certifications_title": "Certifications",

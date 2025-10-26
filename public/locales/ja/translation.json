@@ -237,16 +237,18 @@
   "ashish_portfolio_certifications_subtitle": "実績と資格",
   "ashish_portfolio_certifications_list": {
     "names": {
-       "certification_name_meta": "Metaフロントエンド開発入門",
-    "certification_name_javascript": "JavaScriptプログラミング",
-    "certification_name_scrum1": "プロフェッショナル スクラムマスター I",
-    "certification_name_backbase": "Backbase認定プロフェッショナル"
+        "certification_name_meta": "Metaフロントエンド開発入門",
+        "certification_name_javascript": "JavaScriptプログラミング",
+        "certification_name_scrum1": "プロフェッショナル スクラムマスター I",
+        "certification_name_backbase": "Backbase認定プロフェッショナル",
+        "certification_name_pcep_entry": "PCEP – Pythonエントリーレベル認定"
     },
     "vendors": {
       "certification_vendor_meta": "Coursera",
       "certification_vendor_javascript": "Coursera",
       "certification_vendor_scrum1": "Scrum.org",
-      "certification_vendor_backbase": "Backbase"
+      "certification_vendor_backbase": "Backbase",
+      "certification_vendor_pcep_entry": "Python Institute"
     }
   },
   "ashish_portfolio_certifications_title": "資格",

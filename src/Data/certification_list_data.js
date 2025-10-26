@@ -2,6 +2,7 @@ import Coursera from "../Assets/Certifications/Coursera.png";
 import ScrumMaster from "../Assets/Certifications/Professional_Scrum_Master_I.png";
 import Backbase from "../Assets/Certifications/Backbase_Certificate.png";
 import Coursera_JavaScript from "../Assets/Certifications/JavaScript_Coursera2.png";
+import Python_PCEP from "../Assets/Certifications/PCEP_Certificate.png";
 
 export const CertificationsList = [
   {
@@ -24,4 +25,9 @@ export const CertificationsList = [
     vendor: "certification_vendor_backbase",
     cert: Backbase,
   },
+  {
+    name: "certification_name_pcep_entry",
+    vendor: "certification_vendor_pcep_entry",
+    cert: Python_PCEP,
+  }
 ];
