@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ashish-portfolio/static/css/main.3137a43d.css",
-    "main.js": "/ashish-portfolio/static/js/main.03ba25d2.js",
+    "main.js": "/ashish-portfolio/static/js/main.43cfe13a.js",
     "static/js/453.e52e8d23.chunk.js": "/ashish-portfolio/static/js/453.e52e8d23.chunk.js",
     "static/js/38.4dad74b8.chunk.js": "/ashish-portfolio/static/js/38.4dad74b8.chunk.js",
     "static/media/wynk_music.png": "/ashish-portfolio/static/media/wynk_music.3b68b35345c908f985af.png",
@@ -18,6 +18,7 @@
     "static/media/prakher_profile.jpeg": "/ashish-portfolio/static/media/prakher_profile.9e7f0cc0d3ffe5b88f9c.jpeg",
     "static/media/michal_dillon.jpeg": "/ashish-portfolio/static/media/michal_dillon.08147236b9533c58c407.jpeg",
     "static/media/shubham_dave_profile.jpeg": "/ashish-portfolio/static/media/shubham_dave_profile.f27c0b949a1819542bcc.jpeg",
+    "static/media/PCEP_Certificate.png": "/ashish-portfolio/static/media/PCEP_Certificate.a374f727894634230e37.png",
     "static/media/kartheek_profile.jpeg": "/ashish-portfolio/static/media/kartheek_profile.820e0221e5f42b9581b8.jpeg",
     "static/media/samiksha_profile.jpeg": "/ashish-portfolio/static/media/samiksha_profile.93347a8a4867374f6612.jpeg",
     "static/media/khushbo_profile.jpeg": "/ashish-portfolio/static/media/khushbo_profile.d6dcadbe8c2735bc3a06.jpeg",
@@ -27,12 +28,12 @@
     "static/media/STA.png": "/ashish-portfolio/static/media/STA.206b75342e9a0f768b9f.png",
     "index.html": "/ashish-portfolio/index.html",
     "main.3137a43d.css.map": "/ashish-portfolio/static/css/main.3137a43d.css.map",
-    "main.03ba25d2.js.map": "/ashish-portfolio/static/js/main.03ba25d2.js.map",
+    "main.43cfe13a.js.map": "/ashish-portfolio/static/js/main.43cfe13a.js.map",
     "453.e52e8d23.chunk.js.map": "/ashish-portfolio/static/js/453.e52e8d23.chunk.js.map",
     "38.4dad74b8.chunk.js.map": "/ashish-portfolio/static/js/38.4dad74b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3137a43d.css",
-    "static/js/main.03ba25d2.js"
+    "static/js/main.43cfe13a.js"
   ]
 }
