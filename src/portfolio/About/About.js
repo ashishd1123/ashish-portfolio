@@ -1,4 +1,4 @@
-import AboutMe from "../../Assets/Images/aboutme.png";
+import AboutMe from "../../Assets/Images/aboutme.jpeg";
 import { useTranslation, Trans } from "react-i18next"; // <-- Added Trans here
 // import { useEffect } from "react";
 // import i18next from "i18next";

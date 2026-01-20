@@ -1,9 +1,13 @@
+// Import polyfills FIRST before anything else
+import "./polyfill";
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Import i18n now that localStorage issue is resolved
 import "./i18n";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -23,8 +23,11 @@ export default function App() {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    if (localStorage.getItem("i18nextLng")?.length >= 2) {
-      i18next.changeLanguage(localStorage.getItem("i18nextLng"));
+    if (typeof window !== "undefined" && typeof localStorage !== "undefined") {
+      const savedLng = localStorage.getItem("i18nextLng");
+      if (savedLng && savedLng.length >= 2) {
+        i18next.changeLanguage(savedLng);
+      }
     }
   }, []);
 
