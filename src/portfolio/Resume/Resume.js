@@ -1,5 +1,5 @@
 import { Download, Eye } from "lucide-react";
-import ashish_cv from "../../Assets/resume/ashish_resume_2025.pdf";
+import ashish_cv from "../../Assets/resume/Ashish_Dubey_Professional_Resume_2026.pdf";
 import { useTranslation } from "react-i18next";
 
 const Resume = () => {
